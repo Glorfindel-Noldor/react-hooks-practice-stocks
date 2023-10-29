@@ -1,8 +1,8 @@
 import React from "react";
 
-function Stock({  stocks , onBuy }) {
-  const purchase = ()=>{
-    onBuy(stocks)
+function Stock({ stocks, onBuy }) {
+  const purchase = () => {
+    onBuy(stocks);
   }
 
   return (
