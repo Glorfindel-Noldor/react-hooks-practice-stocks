@@ -1,8 +1,3 @@
-body {
-  background-color: #26023f; /* Deep purple background */
-  color: yellow; /* Yellow text */
-}
-
 h1 {
   padding: 2rem;
 }
@@ -11,14 +6,14 @@ h2 {
   text-align: center;
 }
 
-.card, .list-group {
+.card {
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  background-color: #02013a; /* White background for individual divs */
-  padding: 1rem; /* Add some padding for spacing */
 }
 
-.card-text {
-  color: green;
+.list-group {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
