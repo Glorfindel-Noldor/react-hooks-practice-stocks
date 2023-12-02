@@ -3,7 +3,7 @@ import Stock from "./Stock";
 const API = 'http://localhost:3001/stocks'
 
 
-function StockContainer() {
+function StockContainer({onBuyStock}) {
   const [intel, setIntel] = useState(null)//houses all stocks
 
 
@@ -18,7 +18,7 @@ function StockContainer() {
   },[])
 
   const stockCard = intel.map((item)=>(
-    <Stock key={item.id} item={item} />
+    <Stock key={item.id} item={item} onBuy={onBuyStock}/>
   ))
 
   return (

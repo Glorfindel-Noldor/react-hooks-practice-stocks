@@ -1,15 +1,10 @@
 import React from "react";
 
-function Stock({item , setBoughtStock}) {
-const { name, price } = item
+function Stock({ item, onBuy , onSell}) {
+const { id ,name, price } = item
 
 // type and ticker 
 
-
-
-function handleBuy(item){
-  setBoughtStock(item)
-}
 
 
 
@@ -19,10 +14,13 @@ function handleBuy(item){
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
       <button  
-        onClick={e => handleBuy(e)}
+        onClick={()=> onBuy(item)}
       > 
           <p className="card-text">{price}</p>
       </button>
+      <button
+        onClick={() => onSell(id)}
+      >sell</button>
         </div>
       </div>
     </div>
